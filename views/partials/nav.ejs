@@ -1,0 +1,26 @@
+<!-- views/partials/nav.ejs -->
+<header>
+    <nav class="navbar">
+        <div class="logo">
+            <a href="/">ADEBAYO</a>
+        </div>
+        <div class="menu-toggle" id="menu-toggle">
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+        </div>
+        <ul class="nav-links" id="nav-links">
+            <li><a href="/" class="<%= page === 'home' ? 'active' : '' %>">Home</a></li>
+            <li><a href="/about" class="<%= page === 'about' ? 'active' : '' %>">About</a></li>
+            <li><a href="/projects" class="<%= page === 'projects' ? 'active' : '' %>">Projects</a></li>
+            <li><a href="/skills" class="<%= page === 'skills' ? 'active' : '' %>">Skills</a></li>
+            <li><a href="/contact" class="<%= page === 'contact' ? 'active' : '' %>">Contact</a></li>
+        </ul>
+        <div class="social-icons">
+            <a href="https://github.com/Adebayo-babs" target="_blank" aria-label="GitHub"><i class="fab fa-github"></i></a>
+            <a href="https://www.linkedin.com/in/adebayo-jamiu-a737a6172/" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+            <a href="https://x.com/adebayojamiu38" target="_blank" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+            <a href="https://www.instagram.com/adebayor_babs/" target="_blank" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+        </div>
+    </nav>
+</header>

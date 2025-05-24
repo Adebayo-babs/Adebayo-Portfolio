@@ -1,0 +1,125 @@
+<!-- views/projects.ejs -->
+<%- include('partials/header') %>
+
+<section class="projects-section">
+    <div class="section-title">
+        <h1>My Projects</h1>
+        <p>Explore my recent development work and coding projects</p>
+    </div>
+    
+    <div class="projects-filter">
+        <button class="filter-btn active" data-filter="all">All</button>
+        <button class="filter-btn" data-filter="web">Web Development</button>
+        <button class="filter-btn" data-filter="mobile">Mobile Apps</button>
+        <button class="filter-btn" data-filter="backend">Backend</button>
+    </div>
+    
+    <div class="projects-grid">
+        <!-- Project 1 -->
+        <div class="project-card" data-category="web backend">
+            <div class="project-image">
+                <img src="/images/E-Commerce.jpg" alt="E-Commerce Application">
+            </div>
+            <div class="project-details">
+                <h3>E-Commerce Application</h3>
+                <p>A fully functional marketplace built using MongoDB, Express.js, and Node.js with Passport.js authentication. Users can create, read, update, and delete content across various categories.</p>
+                <div class="project-tech">
+                    <span class="tech-tag">MongoDB</span>
+                    <span class="tech-tag">Express.js</span>
+                    <span class="tech-tag">Node.js</span>
+                    <span class="tech-tag">Passport.js</span>
+                </div>
+                <!-- <div class="project-links">
+                    <a href="#" target="_blank" class="btn small-btn"><i class="fas fa-external-link-alt"></i> Live Demo</a>
+                    <a href="#" target="_blank" class="btn small-btn"><i class="fab fa-github"></i> GitHub</a>
+                </div> -->
+            </div>
+        </div>
+        
+        <!-- Project 2 -->
+        <div class="project-card" data-category="web backend">
+            <div class="project-image">
+                <img src="/images/Real_Estate.jpg" alt="Real Estate Platform">
+            </div>
+            <div class="project-details">
+                <h3>Real Estate Platform</h3>
+                <p>Cloud-based property listing and realtor search system with Cloudinary integration for image uploads. Realtors can list and manage properties while clients can search and view realtors' profiles.</p>
+                <div class="project-tech">
+                    <span class="tech-tag">Node.js</span>
+                    <span class="tech-tag">Express.js</span>
+                    <span class="tech-tag">MongoDB</span>
+                    <span class="tech-tag">Cloudinary</span>
+                </div>
+                <!-- <div class="project-links">
+                    <a href="#" target="_blank" class="btn small-btn"><i class="fas fa-external-link-alt"></i> Live Demo</a>
+                    <a href="#" target="_blank" class="btn small-btn"><i class="fab fa-github"></i> GitHub</a>
+                </div> -->
+            </div>
+        </div>
+        
+        <!-- Project 3 -->
+        <div class="project-card" data-category="web">
+            <div class="project-image">
+                <img src="/images/ecommerce.png" alt="Online Store & Shopping Cart">
+            </div>
+            <div class="project-details">
+                <h3>Online Store & Shopping Cart</h3>
+                <p>Developed an online store application with features such as product listings, shopping cart functionality, and a seamless checkout experience using React.</p>
+                <div class="project-tech">
+                    <span class="tech-tag">React</span>
+                    <span class="tech-tag">JavaScript</span>
+                    <span class="tech-tag">CSS</span>
+                    <span class="tech-tag">API Integration</span>
+                </div>
+                <!-- <div class="project-links">
+                    <a href="#" target="_blank" class="btn small-btn"><i class="fas fa-external-link-alt"></i> Live Demo</a>
+                    <a href="#" target="_blank" class="btn small-btn"><i class="fab fa-github"></i> GitHub</a>
+                </div> -->
+            </div>
+        </div>
+        
+        <!-- Project 4 -->
+        <div class="project-card" data-category="web backend">
+            <div class="project-image">
+                <img src="/images/chat_app.png" alt="Real-Time Chat App">
+            </div>
+            <div class="project-details">
+                <h3>Real-Time Chat Application</h3>
+                <p>WebSocket-powered messaging application with private messaging, group chats, and user presence indicators. Supports real-time notifications and message delivery status.</p>
+                <div class="project-tech">
+                    <span class="tech-tag">Node.js</span>
+                    <span class="tech-tag">Express</span>
+                    <span class="tech-tag">WebSockets</span>
+                    <span class="tech-tag">MongoDB</span>
+                </div>
+                <!-- <div class="project-links">
+                    <a href="#" target="_blank" class="btn small-btn"><i class="fas fa-external-link-alt"></i> Live Demo</a>
+                    <a href="#" target="_blank" class="btn small-btn"><i class="fab fa-github"></i> GitHub</a>
+                </div> -->
+            </div>
+        </div>
+        
+        <!-- Project 5 -->
+        <div class="project-card" data-category="mobile">
+            <div class="project-image">
+                <img src="/images/recipe_app.png" alt="Recipe Book App">
+            </div>
+            <div class="project-details">
+                <h3>Recipe Book App</h3>
+                <p>User-friendly mobile application for browsing, searching, and saving recipes. Features include the ability to generate shopping lists from selected recipes and meal planning.</p>
+                <div class="project-tech">
+                    <span class="tech-tag">Kotlin</span>
+                    <span class="tech-tag">Android</span>
+                    <span class="tech-tag">MVVM</span>
+                    <span class="tech-tag">Room DB</span>
+                </div>
+                <!-- <div class="project-links">
+                    <a href="#" target="_blank" class="btn small-btn"><i class="fas fa-external-link-alt"></i> Google Play</a>
+                    <a href="#" target="_blank" class="btn small-btn"><i class="fab fa-github"></i> GitHub</a>
+                </div> -->
+            </div>
+        </div>
+    </div>
+</section>
+
+<%- include('partials/footer') %>

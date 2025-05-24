@@ -1,0 +1,128 @@
+<!-- views/about.ejs -->
+<%- include('partials/header') %>
+
+<section class="about-section">
+    <div class="section-title">
+        <h1>About Me</h1>
+    </div>
+    
+    <div class="about-content">
+        <div class="about-image">
+            <!-- This would be replaced with your actual profile image -->
+            <div class="profile-image-container">
+                <img src="/images/pic_me.jpg" alt="Adebayo Jamiu" class="profile-image">
+            </div>
+        </div>
+        
+        <div class="about-text">
+            <h2>Adebayo Jamiu</h2>
+            <h3>Software Developer | Full Stack Developer | Android Developer</h3>
+            
+            <p>I am a results-driven Software Developer with over 4 years of experience in designing, developing, evaluating, and maintaining robust software solutions. I specialize in Mobile Development and full-stack web development using React and Node.js.</p>
+            
+            <p>My passion lies in building scalable applications, maintaining software quality, and staying updated with industry trends. I have a proven track record in IT, finance, and customer service sectors.</p>
+            
+            <p>I am enthusiastic about solving complex problems and creating intuitive, user-friendly software that makes a positive impact. My approach combines technical expertise with a focus on delivering value through clean, efficient code.</p>
+            
+            <div class="personal-info">
+                <div class="info-item">
+                    <span class="info-label">Email:</span>
+                    <span class="info-value">adebayojamiu38@gmail.com</span>
+                </div>
+                <div class="info-item">
+                    <span class="info-label">Phone:</span>
+                    <span class="info-value">+2348165798543,+2349123725428</span>
+                </div>
+                <div class="info-item">
+                    <span class="info-label">Location:</span>
+                    <span class="info-value">Nigeria</span>
+                </div>
+            </div>
+            
+            <div class="cta-buttons">
+                <a href="/images/ADEBAYO JAMIU CV.pdf" download class="btn secondary-btn">Download Resume</a>
+                <a href="/contact" class="btn secondary-btn">Contact Me</a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="experience-section">
+    <div class="section-title">
+        <h2>Work Experience</h2>
+    </div>
+    
+    <div class="timeline">
+        <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="timeline-date">Dec 2022 - Present</div>
+            <div class="timeline-content">
+                <h3>Software Developer</h3>
+                <h4>Identiko Integrated Solutions</h4>
+                <ul>
+                    <li>Developed a Card Verification mobile application with Kotlin. Users can view their card details and verify with their fingerprints</li>
+                    <li>Developed an online store with features such as product listings, shopping cart, and checkout using React.</li>
+                    <li>Built a real-time chat application with private messaging, group chats, and user presence indicators using WebSocket.</li>
+                    <li>Created a recipe book application where users can browse, search, save recipes, and generate shopping lists.</li>
+                </ul>
+            </div>
+        </div>
+        
+        <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="timeline-date">Aug 2021 - Nov 2022</div>
+            <div class="timeline-content">
+                <h3>Software Development Intern</h3>
+                <h4>The Code Academy</h4>
+                <ul>
+                    <li>E-Commerce Application: Developed a marketplace using MongoDB, Express.js, Node.js with user authentication via Passport.js.</li>
+                    <li>Real Estate Web Application: Integrated Cloudinary for image uploads, enabling realtors to list and manage properties.</li>
+                    <li>Built and maintained personal portfolio highlighting software projects and achievements.</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="education-section">
+    <div class="section-title">
+        <h2>Education & Training</h2>
+    </div>
+    
+    <div class="education-grid">
+        <div class="education-item">
+            <div class="education-icon"><i class="fas fa-graduation-cap"></i></div>
+            <div class="education-info">
+                <h3>University of Ilorin, Ilorin, Nigeria</h3>
+                <p class="degree">B.Sc. Statistics</p>
+                <p class="duration">September 2016 - August 2021</p>
+            </div>
+        </div>
+        
+        <div class="education-item">
+            <div class="education-icon"><i class="fas fa-laptop-code"></i></div>
+            <div class="education-info">
+                <h3>The Code Center Bootcamp, Lagos, Nigeria</h3>
+                <p class="degree">Software Development Bootcamp</p>
+                <p class="duration">August 2021 - April 2022</p>
+            </div>
+        </div>
+    </div>
+    
+    <div class="training-events">
+        <h3>Conferences & Training</h3>
+        <div class="events-grid">
+            <div class="event-item">
+                <div class="event-name">Art of Lagos 2023</div>
+            </div>
+            <div class="event-item">
+                <div class="event-name">Open-Source Festival 2022</div>
+            </div>
+            <div class="event-item">
+                <div class="event-name">OSCA'22 (Open-Source Community Africa)</div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<%- include('partials/footer') %>

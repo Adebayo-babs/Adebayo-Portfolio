@@ -1,0 +1,26 @@
+{
+  "name": "adebayo-portfolio",
+  "version": "1.0.0",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js",
+    "dev": "nodemon app.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "portfolio",
+    "nodejs",
+    "express",
+    "software-developer"
+  ],
+  "author": "Adebayo Jamiu",
+  "license": "ISC",
+  "description": "Personal portfolio website for Adebayo Jamiu",
+  "dependencies": {
+    "dotenv": "^16.5.0",
+    "ejs": "^3.1.10",
+    "express": "^5.1.0",
+    "nodemailer": "^7.0.3",
+    "nodemon": "^3.1.10"
+  }
+}

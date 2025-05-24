@@ -1,0 +1,76 @@
+<!-- views/index.ejs -->
+<%- include('partials/header') %>
+
+<section class="hero">
+    <div class="hero-content">
+        <h1 class="greeting">Hello, I'm <span class="name">Adebayo Jamiu</span></h1>
+        <h2 class="title">Android Developer  | Software Developer</h2>
+        <p class="intro">Results-driven developer with 4+ years of experience building robust web and mobile applications.</p>
+        <div class="cta-buttons">
+            <a href="/contact" class="btn primary-btn">Get In Touch</a>
+            <a href="/images/ADEBAYO JAMIU CV.pdf" download class="btn secondary-btn">Download Resume</a>
+        </div>
+    </div>
+    <div class="hero-image">
+        <!-- This would be replaced with your actual profile image -->
+        <div class="profile-image-placeholder">
+            <img src="/images/profile_pic1.jpg" alt="Adebayo Jamiu" class="profile-image">
+        </div>
+    </div>
+</section>
+
+<section class="highlights">
+    <div class="section-title">
+        <h2>What I Do</h2>
+    </div>
+    <div class="highlight-cards">
+        <div class="card">
+            <div class="card-icon"><i class="fas fa-laptop-code"></i></div>
+            <h3>Web Development</h3>
+            <p>Building responsive and dynamic web applications.</p>
+        </div>
+        <div class="card">
+            <div class="card-icon"><i class="fas fa-mobile-alt"></i></div>
+            <h3>Mobile Development</h3>
+            <p>Creating native Android applications with Kotlin following MVVM architecture principles.</p>
+        </div>
+        <div class="card">
+            <div class="card-icon"><i class="fas fa-server"></i></div>
+            <h3>Back-End Development</h3>
+            <p>Developing robust APIs and server-side applications.</p>
+        </div>
+    </div>
+</section>
+
+<section class="featured-projects">
+    <div class="section-title">
+        <h2>Featured Projects</h2>
+    </div>
+    <div class="project-preview">
+        <div class="project-card">
+            <div class="project-image">
+                <img src="/images/E-Commerce.jpg" alt="E-Commerce Application">
+            </div>
+            <div class="project-info">
+                <h3>E-Commerce Application</h3>
+                <p>A full-featured marketplace built with MongoDB, Express, and Node.js with user authentication.</p>
+                <a href="/projects" class="btn small-btn">View Project</a>
+            </div>
+        </div>
+        <div class="project-card">
+            <div class="project-image">
+                <img src="/images/Real_Estate.jpg" alt="Real Estate Platform">
+            </div>
+            <div class="project-info">
+                <h3>Real Estate Platform</h3>
+                <p>Cloud-based property listing system with realtor profiles and advanced search capabilities.</p>
+                <a href="/projects" class="btn small-btn">View Project</a>
+            </div>
+        </div>
+    </div>
+    <div class="view-all">
+        <a href="/projects" class="btn primary-btn">View All Projects</a>
+    </div>
+</section>
+
+<%- include('partials/footer') %>

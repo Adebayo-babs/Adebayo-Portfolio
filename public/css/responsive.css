@@ -1,0 +1,235 @@
+/* responsive.css */
+/* Responsive styles for the portfolio website */
+
+/* Medium screens (tablets, less than 992px) */
+@media screen and (max-width: 991px) {
+  /* Global adjustments */
+  .section-title h1, .section-title h2 {
+    font-size: 2.2rem;
+  }
+
+  /* Navigation */
+  .navbar {
+    padding: 15px;
+  }
+
+  .menu-toggle {
+    display: flex;
+  }
+
+  .nav-links {
+    position: fixed;
+    top: 70px;
+    left: -100%;
+    flex-direction: column;
+    background-color: white;
+    width: 100%;
+    height: calc(100vh - 70px);
+    padding: 30px;
+    transition: 0.3s;
+    gap: 20px;
+    box-shadow: var(--shadow);
+    z-index: 999;
+  }
+
+  .nav-links.active {
+    left: 0;
+  }
+
+  .nav-links a {
+    font-size: 1.2rem;
+  }
+
+  .navbar .social-icons {
+    display: none;
+  }
+
+  /* Hero section */
+  .hero {
+    flex-direction: column-reverse;
+    text-align: center;
+    gap: 30px;
+    padding: 40px 0;
+  }
+
+  .profile-image-placeholder {
+    width: 280px;
+    height: 280px;
+  }
+
+  .cta-buttons {
+    justify-content: center;
+  }
+
+  /* Featured projects */
+  .project-preview {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  /* About page */
+  .about-content {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .about-image {
+    margin: 0 auto 20px;
+  }
+
+  .profile-image-container {
+    margin: 0 auto;
+  }
+
+  .personal-info {
+    justify-content: center;
+  }
+
+  .info-item {
+    justify-content: center;
+  }
+
+  .about-text .cta-buttons {
+    justify-content: center;
+  }
+
+  /* Contact page */
+  .contact-info {
+    margin-bottom: 30px;
+  }
+}
+
+/* Small screens (mobile phones, less than 768px) */
+@media screen and (max-width: 767px) {
+  /* Global adjustments */
+  .container {
+    padding: 0 15px;
+  }
+
+  .section-title h1, .section-title h2 {
+    font-size: 2rem;
+  }
+
+  /* Hero section */
+  .greeting {
+    font-size: 1.3rem;
+  }
+
+  .name {
+    font-size: 2rem;
+  }
+
+  .title {
+    font-size: 1.4rem;
+  }
+
+  /* Highlight cards */
+  .card {
+    width: 100%;
+  }
+
+  /* Project cards */
+  .projects-grid {
+    grid-template-columns: 1fr;
+  }
+
+  /* Experience section */
+  .timeline:before {
+    left: 15px;
+  }
+
+  .timeline-item {
+    padding-left: 40px;
+  }
+
+  .timeline-dot {
+    left: 11px;
+  }
+
+  /* Education section */
+  .education-grid {
+    flex-direction: column;
+  }
+
+  /* Skills page */
+  .skill-item {
+    flex-wrap: wrap;
+  }
+
+  .skill-name {
+    min-width: 100%;
+    margin-bottom: 5px;
+  }
+
+  .skill-percentage {
+    margin-left: auto;
+  }
+
+  /* Footer */
+  .footer-content {
+    flex-direction: column;
+    text-align: center;
+  }
+}
+
+/* Very small screens (small mobile phones, less than 576px) */
+@media screen and (max-width: 575px) {
+  /* Global adjustments */
+  .btn {
+    padding: 10px 20px;
+  }
+
+  .cta-buttons {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  /* Project cards */
+  .project-links {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .project-links .btn {
+    width: 100%;
+  }
+
+  /* Contact form */
+  .info-item {
+    flex-direction: column;
+    align-items: flex-start;
+    text-align: left;
+  }
+
+  .contact-info .info-item {
+    flex-direction: row;
+    text-align: left;
+  }
+}
+
+/* Landscape mode on small devices */
+@media screen and (max-height: 500px) and (orientation: landscape) {
+  .nav-links {
+    overflow-y: auto;
+  }
+}
+
+/* Print styles */
+@media print {
+  .navbar, footer, .cta-buttons, .project-links {
+    display: none;
+  }
+
+  body, .container {
+    padding: 0;
+    margin: 0;
+  }
+
+  main.content {
+    padding: 0;
+  }
+
+  .section-title h1:after, .section-title h2:after {
+    display: none;
+  }
+}
