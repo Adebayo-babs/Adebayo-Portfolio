@@ -1,7 +1,7 @@
 // app.js - Main server file
-require('dotenv').config();
 const express = require('express');
 const nodemailer = require('nodemailer');
+require('dotenv').config();
 const path = require('path');
 const app = express();
 const PORT = process.env.PORT || 3000;
